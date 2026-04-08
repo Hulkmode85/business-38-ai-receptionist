@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReceptionistAI — Never Miss a Call Again</title>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{font-family:'Segoe UI',system-ui,sans-serif;background:#0a0a0f;color:#e0e0e0}
+        .nav{padding:20px 40px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #1a1a2e}
+        .logo{font-size:24px;font-weight:700;color:#a78bfa}.logo span{color:#8b5cf6}
+        nav a{color:#9ca3af;text-decoration:none;margin-left:20px;font-size:14px}nav a:hover{color:#a78bfa}
+        .nav .cta-sm{background:#8b5cf6;color:#fff;padding:8px 20px;border-radius:8px;font-weight:600}
+        .hero{text-align:center;padding:80px 20px 60px;max-width:800px;margin:0 auto}
+        .badge{display:inline-block;background:#8b5cf620;color:#a78bfa;padding:6px 16px;border-radius:20px;font-size:13px;font-weight:500;margin-bottom:20px;border:1px solid #8b5cf640}
+        h1{font-size:48px;line-height:1.1;margin-bottom:20px;background:linear-gradient(to right,#a78bfa,#8b5cf6);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+        .hero p{color:#9ca3af;font-size:18px;line-height:1.6;max-width:600px;margin:0 auto 32px}
+        .cta{display:inline-block;background:linear-gradient(135deg,#8b5cf6,#a78bfa);color:#fff;padding:14px 36px;border-radius:10px;text-decoration:none;font-weight:600;font-size:16px;transition:opacity .2s}.cta:hover{opacity:.9}
+        .cta-ghost{display:inline-block;color:#a78bfa;padding:14px 24px;text-decoration:none;font-weight:500;font-size:16px}
+        .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:700px;margin:0 auto 80px;padding:0 20px;text-align:center}
+        .stat h3{font-size:36px;color:#a78bfa;font-weight:700}.stat p{color:#9ca3af;font-size:14px;margin-top:4px}
+        .features{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:1000px;margin:0 auto 80px;padding:0 20px}
+        .feat{background:#111118;border:1px solid #1e1e2e;border-radius:16px;padding:32px;text-align:center}
+        .feat .icon{font-size:36px;margin-bottom:16px}
+        .feat h3{font-size:18px;margin-bottom:8px;color:#e0e0e0}
+        .feat p{color:#9ca3af;font-size:14px;line-height:1.5}
+        .pricing{text-align:center;padding:80px 20px;max-width:1000px;margin:0 auto}
+        .pricing h2{font-size:32px;margin-bottom:12px}.pricing>p{color:#9ca3af;margin-bottom:40px}
+        .plans{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+        .plan{background:#111118;border:1px solid #1e1e2e;border-radius:16px;padding:32px;text-align:center}
+        .plan.pop{border-color:#8b5cf6;position:relative}
+        .plan.pop::before{content:'MOST POPULAR';position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:#8b5cf6;color:#fff;padding:4px 16px;border-radius:12px;font-size:11px;font-weight:700}
+        .plan h3{font-size:20px;margin-bottom:8px}.plan .price{font-size:40px;font-weight:700;color:#a78bfa;margin-bottom:4px}.plan .price span{font-size:16px;color:#9ca3af}
+        .plan .period{color:#9ca3af;font-size:14px;margin-bottom:20px}
+        .plan ul{list-style:none;text-align:left;margin-bottom:24px}
+        .plan li{padding:8px 0;font-size:14px;color:#d0d0d0;border-bottom:1px solid #1a1a2e}
+        .plan li::before{content:'\\2713';color:#a78bfa;margin-right:8px;font-weight:700}
+        .plan .btn{display:block;padding:12px;background:#8b5cf6;color:#fff;border-radius:10px;text-decoration:none;font-weight:600;transition:opacity .2s}.plan .btn:hover{opacity:.9}
+        .ftr{text-align:center;padding:40px;border-top:1px solid #1a1a2e;color:#6b7280;font-size:13px}
+        @media(max-width:768px){.features,.plans,.stats{grid-template-columns:1fr}h1{font-size:32px}}
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="logo">Receptionist<span>AI</span></div>
+        <nav><a href="#features">Features</a><a href="#pricing">Pricing</a><a href="/" class="cta-sm">Try Free</a></nav>
+    </div>
+
+    <div class="hero">
+        <div class="badge">$47.5B Market — AI Voice Agents</div>
+        <h1>Your AI Receptionist That Never Sleeps</h1>
+        <p>Answer every call, book every appointment, and handle customer inquiries 24/7 — with an AI voice agent that sounds human and costs 90% less than a full-time hire.</p>
+        <a href="/" class="cta">Try the Demo</a>
+        <a href="#pricing" class="cta-ghost">View Pricing</a>
+    </div>
+
+    <div class="stats">
+        <div class="stat"><h3>24/7</h3><p>Always available</p></div>
+        <div class="stat"><h3>90%</h3><p>Cost reduction</p></div>
+        <div class="stat"><h3>&lt;2s</h3><p>Response time</p></div>
+    </div>
+
+    <div class="features" id="features">
+        <div class="feat"><div class="icon">&#128222;</div><h3>Smart Call Handling</h3><p>Routes calls, answers FAQs, and books appointments — just like your best receptionist, but 24/7.</p></div>
+        <div class="feat"><div class="icon">&#128197;</div><h3>Auto-Scheduling</h3><p>Integrates with your calendar to book, reschedule, and confirm appointments automatically.</p></div>
+        <div class="feat"><div class="icon">&#129302;</div><h3>Intent Detection</h3><p>Understands what callers need and routes emergencies, sales, and support to the right place.</p></div>
+    </div>
+
+    <div class="pricing" id="pricing">
+        <h2>Simple Pricing</h2>
+        <p>Pay per call, not per seat. Start free.</p>
+        <div class="plans">
+            <div class="plan">
+                <h3>Starter</h3>
+                <div class="price">$49<span>/mo</span></div>
+                <div class="period">100 calls included</div>
+                <ul>
+                    <li>AI call answering</li>
+                    <li>Appointment booking</li>
+                    <li>Business hours routing</li>
+                    <li>Email summaries</li>
+                </ul>
+                <a href="/" class="btn">Start Free Trial</a>
+            </div>
+            <div class="plan pop">
+                <h3>Professional</h3>
+                <div class="price">$149<span>/mo</span></div>
+                <div class="period">500 calls included</div>
+                <ul>
+                    <li>Everything in Starter</li>
+                    <li>Custom voice & personality</li>
+                    <li>CRM integration</li>
+                    <li>Call analytics dashboard</li>
+                    <li>SMS follow-ups</li>
+                </ul>
+                <a href="/" class="btn">Start Free Trial</a>
+            </div>
+            <div class="plan">
+                <h3>Enterprise</h3>
+                <div class="price">$399<span>/mo</span></div>
+                <div class="period">Unlimited calls</div>
+                <ul>
+                    <li>Everything in Professional</li>
+                    <li>Multi-location support</li>
+                    <li>API access</li>
+                    <li>Custom integrations</li>
+                    <li>Dedicated account manager</li>
+                    <li>White-label option</li>
+                </ul>
+                <a href="/" class="btn">Contact Sales</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="ftr">&copy; 2026 ReceptionistAI. All rights reserved.</div>
+</body>
+</html>
